@@ -1,7 +1,17 @@
-step 1:
-增加通道数量
+Official code release of Team New York Martians for the PBVS 2026 Mars Landslide Segmentation Challenge.
 
-step 2：
-随机裁剪
+## Overview
+Our solution is a spatial-continuity-aware segmentation pipeline with four expert models for different crop scales, followed by geospatial fusion and post-processing.
 
-step 3:
+## Repository Structure
+- `process/`: preprocessing scripts
+- `train_val_expert_full.py`: train expert models
+- `predict_expert_fused_geo.py`: inference and geospatial fusion
+- `fuse_post_export_pipeline.py`: ensemble, post-processing, and submission export
+
+## Setup
+See `requirements.txt` and `PIPELINE_INSTRUCTIONS.md`.
+
+## Team
+New York Martians  
+New York University
