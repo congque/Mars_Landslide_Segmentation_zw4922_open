@@ -27,7 +27,7 @@ def parse_args():
     parser.add_argument(
         "--post-script",
         type=str,
-        default="./post_process.py",
+        default="./process/post_process.py",
         help="Path to post-process script (the advanced post-processing logic).",
     )
     return parser.parse_args()

@@ -108,7 +108,7 @@ Script: `fuse_post_export_pipeline.py`
 This script does all of the following:
 - read multiple prediction folders
 - fuse probability maps (valid-pixel weighted)
-- run `post_process.py` with threshold and post params
+- run `process/post_process.py` with threshold and post params
 - export per-sample binary masks under `pred_mask_post/`
 - create a submission zip
 

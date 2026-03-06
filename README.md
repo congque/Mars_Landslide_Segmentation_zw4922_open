@@ -5,6 +5,7 @@ Our solution is a spatial-continuity-aware segmentation pipeline with four exper
 
 ## Repository Structure
 - `process/`: preprocessing scripts
+- `process/post_process.py`: advanced post-processing on fused probability maps
 - `train_val_expert_full.py`: train expert models
 - `predict_expert_fused_geo.py`: inference and geospatial fusion
 - `fuse_post_export_pipeline.py`: ensemble, post-processing, and submission export
