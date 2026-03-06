@@ -57,7 +57,7 @@ data/test_2/images_15d_256256
 
 ## 4) Train 4 experts for one backbone
 
-Script: `train_val_expert_full.py`
+Script: `train_expert_full.py`
 
 Example backbone: `uconvnextb`
 
@@ -66,10 +66,10 @@ MODEL=uconvnextb
 SAVE=./pths_expert_${MODEL}
 mkdir -p ${SAVE}
 
-python train_val_expert_full.py --expert 128128 --model ${MODEL} --epochs 147 --seed 3400 --save-dir ${SAVE}
-python train_val_expert_full.py --expert 128256 --model ${MODEL} --epochs 147 --seed 3401 --save-dir ${SAVE}
-python train_val_expert_full.py --expert 256128 --model ${MODEL} --epochs 147 --seed 3402 --save-dir ${SAVE}
-python train_val_expert_full.py --expert 256256 --model ${MODEL} --epochs 147 --seed 3403 --save-dir ${SAVE}
+python train_expert_full.py --expert 128128 --model ${MODEL} --epochs 147 --seed 3400 --save-dir ${SAVE}
+python train_expert_full.py --expert 128256 --model ${MODEL} --epochs 147 --seed 3401 --save-dir ${SAVE}
+python train_expert_full.py --expert 256128 --model ${MODEL} --epochs 147 --seed 3402 --save-dir ${SAVE}
+python train_expert_full.py --expert 256256 --model ${MODEL} --epochs 147 --seed 3403 --save-dir ${SAVE}
 ```
 
 The script saves files named:
